@@ -1,0 +1,17 @@
+body {
+	margin: 0; padding: 0;
+	text-indent: 2em;
+}
+
+div#backscreen {
+	width: 100vw;
+	height: 200px;
+	background-color: lightblue;
+}
+img#me {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	border-radius: 50%;
+	border: 8px solid white;
+}
