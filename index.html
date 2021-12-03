@@ -2,7 +2,7 @@
 <html lang="en-US">
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>MikaelOliveira</title>
 		<link rel="stylesheet" href="style.css" />
 	</head>
@@ -33,17 +33,21 @@
 		</div>
 		
 		<script>
-		
 			if(navigator.language == "pt-BR") {
 				var lang = document.querySelector("div#pt")
 				
 				lang.style.display = "block"
 				lang.style.animationName = "apear-down"
-				
 				lang.addEventListener("click", function() {
 					location.assign("index-pt.html")
 				})
+				
+				
+				setTimeout(function() {
+					lang.style.display = "none"
+				}, 8000)
 			}
 		</script>
+		<script src="script.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 </html>

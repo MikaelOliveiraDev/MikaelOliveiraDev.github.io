@@ -9,10 +9,7 @@ div.lang-alert {
 	padding: 5px;
 	box-sizing: border-box;
 	position: absolute;
-	/*
 	background-color: white;
-	*/
-	background-color: #beefbe;
 	border-radius: 10px;
 	font-family: Arial;
 	font-size: 12px;
@@ -22,6 +19,12 @@ div.lang-alert {
 	transform: translateX(-50%);
 	animation-duration: .7s;
 	animation-iteration-count: 1;
+}
+div.lang-alert#pt {
+	background-color: #beefbe;
+}
+div.lang-alert#en {
+	background-color: #91bcf6;
 }
 
 div#backscreen {
@@ -63,6 +66,7 @@ div#about-me h2 {
 div#about-me p.more {
 	display: none;
 }
+
 
 @keyframes apear-center{
 	0% {
