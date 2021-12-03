@@ -3,34 +3,36 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="" content="">
-		<title></title>
+		<title>MikaelOliveira</title>
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
+		
+		
 		<div id="backscreen" >
 			<img id="me" src="me.jpg" width="100px"/>
 		</div>
 		
-		<p>Bem-vindo ao meu website! Espero que você encontre o melhor de mim.😉
-		<br/>Divirta-se!</p>
+		<p id="intro">Bem-vindo ao meu website! Espero que você encontre o melhor de mim.😉
+		Divirta-se!</p>
 		
+		<div id="about-me">
 		<h2>Sobre mim</h2>
 		<p>
-			Meu nome é <strong>Mikael Oliveira</strong>, tenho 19 anos, de Marituba PA.
+			Meu nome é <strong>Mikael Oliveira</strong>, tenho 19 anos, de Marituba - PA.
 			Sou autodidata em ingles, e algumas coisas de programação.
+			<span class="more">mais</span>
 		</p>
-		<p>
-			Como o esperado de un iniciante, tenho conhecimentos básicos em HTML, CSS e JavaScript.
+		<p class="more">
+			Como o esperado de um iniciante, tenho conhecimentos básicos em HTML, CSS e JavaScript.
 			E um pouco de desenvolvimento SVG também.
+			<span class="less">menos</span>
 		</p>
-		
+		</div>
 		
 		<script>
 			if(navigator.language == "en-Us") {
-				setTimeout(function() {
-					var yes = confirm("This page is also alaviable in English.\nWould you like to change to it??")
-				if(yes) location.assign("in")
-				}, 1000)
+				
 			}
 		</script>
 	</body>

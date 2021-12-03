@@ -3,35 +3,46 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="" content="">
-		<title></title>
+		<title>MikaelOliveira</title>
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<div id="backscreen" >
-			<img id="me" src="me.jpg" width="100px"/>
+		<div id="pt" class="lang-alert">
+			Esta página também está disponivel em português. Clique para redirecionar.
 		</div>
 		
-		<p>Welcome to my website! Hope you find out the best of me😉.
-		<br/>Have fun!</p>
+		<div id="backscreen" >
+			<img id="me" src="me.jpg"/>
+		</div>
 		
+		<p id="intro">Welcome to my website! Hope you find out the best of me😉.
+		Have fun!</p>
+		
+		<div id="about-me">
 		<h2>About me</h2>
 		<p>
 			My name is <strong>Mikael Oliveira</strong>, I'm 19, from Brazil. 
 			I'm self-taught in English, and some programing stuff.
+			<span class="more">more</span>
 		</p>
-		<p>
+		<p class="more">
 			As expected from a beginner, I have basic knowledge in HTML, CSS and JavaScript.
 			Also, a bit of SVG vector development.
+			<span class="less">less</span>
 		</p>
-		
+		</div>
 		
 		<script>
+		
 			if(navigator.language == "pt-BR") {
-				setTimeout(function() {
-					var yes = confirm("Esta página também está disponivel em português.\nGostaria de acessá-la?")
-	
-				if(yes) location.assign("index-pt.html")
-				}, 1000)
+				var lang = document.querySelector("div#pt")
+				
+				lang.style.display = "block"
+				lang.style.animationName = "apear-down"
+				
+				lang.addEventListener("click", function() {
+					location.assign("index-pt.html")
+				})
 			}
 		</script>
 	</body>
