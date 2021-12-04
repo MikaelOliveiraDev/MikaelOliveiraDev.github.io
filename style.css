@@ -30,7 +30,14 @@ div.lang-alert#en {
 div#backscreen {
 	width: 100vw;
 	height: 200px;
-	background-color: lightblue;
+	background-image: url('/bg1.png');
+	background-size: cover;
+	background-position: center;
+	animation-name: backscreenAnim;
+	
+	animation-duration: 3s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
 }
 img#me {
 	width: 120px;
@@ -94,5 +101,14 @@ div#about-me p.more {
 	}
 	100% {
 		transform: translate(-50%, 0);
+	}
+}
+
+@keyframes backscreenAnim {
+	0% {
+		background-size: 110%;
+	}
+	100% {
+		background-size: 130%;
 	}
 }

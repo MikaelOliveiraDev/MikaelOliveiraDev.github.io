@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="en-US">
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>MikaelOliveira</title>
-		<link rel="stylesheet" href="style.css" />
-	</head>
-	<body>
-		<div id="pt" class="lang-alert">
-			Esta página também está disponivel em português. Clique para redirecionar.
-		</div>
-		
-		<div id="backscreen" >
-			<img id="me" src="me.jpg"/>
-		</div>
-		
-		<p id="intro">Welcome to my website! Hope you find out the best of me😉.
-		Have fun!</p>
-		
-		<div id="about-me">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MikaelOliveira</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<div id="pt" class="lang-alert">
+		Esta página também está disponivel em português. Clique para redirecionar.
+	</div>
+
+	<div id="backscreen">
+		<img id="me" src="me.jpg" />
+	</div>
+
+	<p id="intro">
+		Welcome to my website! Hope you find out the best of me😉.
+		Have fun!
+	</p>
+
+	<div id="about-me">
 		<h2>About me</h2>
 		<p>
-			My name is <strong>Mikael Oliveira</strong>, I'm 19, from Brazil. 
+			My name is <strong>Mikael Oliveira</strong>, I'm 19, from Brazil.
 			I'm self-taught in English, and some programing stuff.
 			<span class="more">more</span>
 		</p>
@@ -30,24 +32,28 @@
 			Also, a bit of SVG vector development.
 			<span class="less">less</span>
 		</p>
-		</div>
-		
-		<script>
-			if(navigator.language == "pt-BR") {
-				var lang = document.querySelector("div#pt")
-				
-				lang.style.display = "block"
-				lang.style.animationName = "apear-down"
-				lang.addEventListener("click", function() {
-					location.assign("index-pt.html")
-				})
-				
-				
-				setTimeout(function() {
-					lang.style.display = "none"
-				}, 8000)
-			}
-		</script>
-		<script src="script.js" type="text/javascript" charset="utf-8"></script>
-	</body>
+	</div>
+	
+
+
+
+
+	<script>
+		if (navigator.language == "pt-BR") {
+			var lang = document.querySelector("div#pt")
+
+			lang.style.display = "block"
+			lang.style.animationName = "apear-down"
+			lang.addEventListener("click", function() {
+				location.assign("index-pt.html")
+			})
+
+
+			setTimeout(function() {
+				lang.style.display = "none"
+			}, 8000)
+		}
+	</script>
+	<script src="script.js" type="text/javascript" charset="utf-8"></script>
+</body>
 </html>
