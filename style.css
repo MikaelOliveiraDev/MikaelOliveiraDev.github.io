@@ -3,6 +3,7 @@ body {
 	text-indent: 2em;
 }
 
+/*Language alert*/
 div.lang-alert {
 	display: none;
 	width: 80vw;
@@ -27,6 +28,8 @@ div.lang-alert#en {
 	background-color: #91bcf6;
 }
 
+
+/*Top presentation*/
 div#backscreen {
 	width: 100vw;
 	height: 200px;
@@ -47,33 +50,77 @@ img#me {
 	border-radius: 50%;
 	border: 8px solid white;
 }
-
 p#intro {
 	margin-top: 50px;
 }
 
-span.more, span.less {
-	color: blue;
-}
-
-div#about-me {
-	width: 90vw;
+/*main page*/
+div#about-me, div#what-i-do {
+	width: 95vw;
 	margin: auto;
 	padding: 20px;
 	border-radius: 20px;
 	box-sizing: border-box;
-	box-shadow: 1px 2px 5px #c2c2c2;
+	/*
+	box-shadow: 1px 2px 5px #c2c2c285;
+	*/
 	animation-name: apear-up;
 	animation-duration: 1.5s;
 	animation-iteration-count: 1;
 }
-div#about-me h2 {
+div#about-me h2, div#what-i-do {
 	margin-top: 0;
 }
 div#about-me p.more {
 	display: none;
 }
 
+span.more, span.less {
+	color: blue;
+}
+
+div#horiz-cont {
+	width: 100vw;
+	overflow: scroll;
+}
+div#horiz-list {
+	/*
+	background-color: #f9baba;
+	*/
+	width: 100vw; 
+	margin: 5px 0 5px 40px;
+	border: 1px solid #ffffff00;
+	border-radius: 20px;
+	box-shadow: 1px 2px 5px #c2c2c285;
+}
+div.project-card {
+	width: 200px;
+	margin: 15px;
+	/*
+	background-color: #95d1e0;*/
+}
+
+div.project-card .cover {
+	width: 200px; height: 112.5px;
+	margin: 3px auto auto 3px;
+	background-image: url('/guess-cover.png');
+}
+div#horiz-list h3 {
+	text-indent: 0;
+}
+div#horiz-list p {
+	font-size: 11px;
+}
+div#horiz-list h3, div#horiz-list p {
+	margin-top: 5px;
+	margin-bottom: 2px;
+}
+
+
+footer {
+	margin-top: 200px;
+	color: #616161;
+}
 
 @keyframes apear-center{
 	0% {
