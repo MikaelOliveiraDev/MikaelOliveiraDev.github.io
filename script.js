@@ -18,3 +18,11 @@ for(let i = 0; i < moreLinks.length; i++) {
 		moreLink.style.display = "block"
 	})
 }
+
+var guess = document.querySelector("div#guess")
+
+guess.addEventListener("click", function() {
+	var lang = document.documentElement.lang
+	
+	location.assign("/"+ lang +"/guess/game.html")
+})

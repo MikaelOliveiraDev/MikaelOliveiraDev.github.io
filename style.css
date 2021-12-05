@@ -78,6 +78,9 @@ div#about-me p.more {
 span.more, span.less {
 	color: blue;
 }
+span.orange {
+	color: #f1a700;
+}
 
 div#horiz-cont {
 	width: 100vw;
