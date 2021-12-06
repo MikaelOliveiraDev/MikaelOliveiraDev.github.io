@@ -24,5 +24,5 @@ var guess = document.querySelector("div#guess")
 guess.addEventListener("click", function() {
 	var lang = document.documentElement.lang
 	
-	location.assign("/"+ lang +"/guess/game.html")
+	window.open("/"+ lang +"/guess/game.html")
 })
