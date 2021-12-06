@@ -1,0 +1,23 @@
+div#tela {
+	flex-direction: row;
+}
+div#conteiner {
+	margin-left: 30px;
+	margin-bottom: 0px;
+	display: flex;
+	flex-direction: row;
+}
+
+div#conteiner div#cardcor {
+	width: 30vw; height: 30vw;
+	margin-right: 10px;
+}
+
+div#cards {
+	display: flex;
+	flex-direction: column;
+}
+div#cards div {
+	width: 130px;
+	height: 50px;
+}
