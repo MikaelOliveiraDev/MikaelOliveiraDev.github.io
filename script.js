@@ -20,9 +20,13 @@ for(let i = 0; i < moreLinks.length; i++) {
 }
 
 var guess = document.querySelector("div#guess")
+var hop = document.querySelector("div#hop")
 
 guess.addEventListener("click", function() {
 	var lang = document.documentElement.lang
 	
 	window.open("/"+ lang +"/guess/game.html")
+})
+hop.addEventListener("click", function() {
+	window.open("/hop/hop.html")
 })
