@@ -78,35 +78,24 @@ div#about-me p.more {
 span.more, span.less {
 	color: blue;
 }
-span.orange {
-	color: #f1a700;
-}
+span.orange {color: #f1a700;}
+span.red {color: #ea5757;}
 
 div#horiz-cont {
 	width: 100vw;
-	overflow: scroll;
+	overflow-x: scroll;
+	box-sizing: border-box;
 }
 div#horiz-list {
-	/*
-	background-color: #f9baba;
-	*/
-	width: 100vw; 
+	width: 500px; 
+	display: flex;
 	margin: 5px 0 5px 40px;
+	/*
+	background-color: #f9baba; 
 	border: 1px solid #ffffff00;
+	*/
 	border-radius: 20px;
 	box-shadow: 1px 2px 5px #c2c2c285;
-}
-div.project-card {
-	width: 200px;
-	margin: 15px;
-	/*
-	background-color: #95d1e0;*/
-}
-
-div.project-card .cover {
-	width: 200px; height: 112.5px;
-	margin: 3px auto auto 3px;
-	background-image: url('/guess-cover.png');
 }
 div#horiz-list h3 {
 	text-indent: 0;
@@ -119,6 +108,27 @@ div#horiz-list h3, div#horiz-list p {
 	margin-bottom: 2px;
 }
 
+div.project-card {
+	width: 200px;
+	margin: 15px;
+	/*
+	border: 1px solid red;
+	display: inline-block;
+	float: right;
+	background-color: #95d1e0;*/
+}
+div.project-card .cover {
+	width: 200px; height: 112.5px;
+	margin: 3px auto auto 3px;
+}
+
+#guess .cover {
+	background-image: url('/guess-cover.png');
+}
+#hop .cover {
+	background-image: url('/img/hop-cover.png');
+	background-size: 100%;
+}
 
 footer {
 	margin-top: 200px;
