@@ -7,10 +7,6 @@
 	<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-	<div id="pt" class="lang-alert">
-		Esta página também está disponivel em português. Clique para redirecionar.
-	</div>
-
 	<div id="backscreen">
 		<img id="me" src="me.jpg" />
 	</div>
@@ -21,35 +17,35 @@
 
 	<main>
 
-	<div id="about-me">
-		<h2>About me</h2>
-		<p>
-			My name is <strong>Mikael Oliveira</strong>, I'm 19, from Brazil.
-			I'm self-taught in English, and some programing stuff.
-			<span class="more">more</span>
-		</p>
-		<p class="more">
-			As expected from a beginner, I have basic knowledge in HTML, CSS and JavaScript.
-			Also, a bit of SVG vector development.
-			<span class="less">less</span>
-		</p>
-	</div>
-	
-	<div id="what-i-do">
-		<h2>What I do</h2>
-		<p>
-			Try some of my projects🙃:
-		</p>
-	</div>
-		
+		<div id="about-me">
+			<h2>About me</h2>
+			<p>
+				My name is <strong>Mikael Oliveira</strong>, I'm 19, from Brazil.
+				I'm self-taught in English, and some programing stuff.
+				<span class="more">more</span>
+			</p>
+			<p class="more">
+				As expected from a beginner, I have basic knowledge in HTML, CSS and JavaScript.
+				Also, a bit of SVG vector development.
+				<span class="less">less</span>
+			</p>
+		</div>
+
+		<div id="what-i-do">
+			<h2>What I do</h2>
+			<p>
+				Try some of my projects🙃:
+			</p>
+		</div>
+
 		<div id="horiz-cont">
 			<div id="horiz-list">
-				
+
 				<div id="guess" class="project-card">
 					<div class="cover"></div>
 					<h3>Guess the color</h3>
 					<p>
-						Could you tell me the name of this color?😏<br/>
+						Could you tell me the name of this color?😏<br />
 						<span class="orange">unstable.</span>
 					</p>
 				</div>
@@ -60,10 +56,10 @@
 						<span class="red">in development.</span>
 					</p>
 				</div>
-				
+
 			</div>
 		</div>
-	
+
 	</main>
 
 	<footer>
@@ -71,22 +67,6 @@
 	</footer>
 
 
-	<script>
-		if (navigator.language == "pt-BR") {
-			var lang = document.querySelector("div#pt")
-
-			lang.style.display = "block"
-			lang.style.animationName = "apear-down"
-			lang.addEventListener("click", function() {
-				location.assign("index-pt.html")
-			})
-
-
-			setTimeout(function() {
-				lang.style.display = "none"
-			}, 8000)
-		}
-	</script>
 	<script src="script.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
