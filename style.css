@@ -3,37 +3,12 @@ body {
 	text-indent: 2em;
 }
 
-/*Language alert*/
-div.lang-alert {
-	display: none;
-	width: 80vw;
-	padding: 5px;
-	box-sizing: border-box;
-	position: absolute;
-	background-color: white;
-	border-radius: 10px;
-	font-family: Arial;
-	font-size: 12px;
-	box-shadow: 0 0 5px #bfbfbf86;
-	left: 50%;
-	top: 4px;
-	transform: translateX(-50%);
-	animation-duration: .7s;
-	animation-iteration-count: 1;
-}
-div.lang-alert#pt {
-	background-color: #beefbe;
-}
-div.lang-alert#en {
-	background-color: #91bcf6;
-}
-
 
 /*Top presentation*/
 div#backscreen {
 	width: 100vw;
 	height: 200px;
-	background-image: url('/bg1.png');
+	background-image: url('./img/bg1.png');
 	background-size: cover;
 	background-position: center;
 	animation-name: backscreenAnim;
@@ -123,7 +98,7 @@ div.project-card .cover {
 }
 
 #guess .cover {
-	background-image: url('/guess-cover.png');
+	background-image: url('./img/guess-cover.png');
 }
 #hop .cover {
 	background-image: url('/img/hop-cover.png');
