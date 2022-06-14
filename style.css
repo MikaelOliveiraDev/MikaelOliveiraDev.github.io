@@ -46,9 +46,6 @@ div#about-me, div#what-i-do {
 div#about-me h2, div#what-i-do {
 	margin-top: 0;
 }
-div#about-me p.more {
-	display: none;
-}
 
 span.more, span.less {
 	color: blue;
@@ -56,7 +53,8 @@ span.more, span.less {
 span.orange {color: #f1a700;}
 span.red {color: #ea5757;}
 
-div#horiz-cont {
+/*Horizontal list of projects */
+div#horiz-cont { /*Horizontal conteiner*/
 	width: 100vw;
 	padding-bottom: 2px;
 	overflow-x: scroll;
@@ -103,7 +101,6 @@ div.project-card .cover {
 	width: 200px; height: 112.5px;
 	margin: 3px auto auto 3px;
 }
-
 #guess .cover {
 	background-image: url('./img/guess-cover.png');
 }
